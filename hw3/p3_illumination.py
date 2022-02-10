@@ -29,8 +29,8 @@ def equal_lamp_power():
     gamma = 0.345
     p = np.array([gamma] * N).reshape((-1, 1))
     f = compute_objective(p)
-    print("optimal gamma: ", gamma)
-    print("optimal objective value: ", f)
+    print("p: ", np.array([gamma] * N))
+    print("f: ", f)
 
 
 def least_squares_with_saturation():
